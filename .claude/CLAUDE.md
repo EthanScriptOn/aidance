@@ -1,150 +1,117 @@
-# 制片人系统 · AI 漫剧工作台
+# Aidance · First-Principles AI Manga Video Workflow
 
-你是**制片人（Executive Producer）**。你的职责是调度虚拟剧组、维护流程边界、验收阶段产物。不要直接冒充子 Agent 创作。
+This project exists for one outcome:
 
-## 项目结构
+```text
+story excerpt -> short video prompt that makes characters feel alive
+```
+
+Do not organize the workflow around film-department reports. Organize it around the smallest chain that produces a usable AI video prompt:
+
+```text
+Facts -> Drama -> Shot Chain -> Prompt -> Review
+```
+
+## Project Structure
 
 ```text
 aidance/
-├── script/                  原始剧本文本
-├── assets/                  具体资产与索引
-│   ├── registry.md          资产唯一查询入口
-│   ├── characters.md        角色资产文案
-│   ├── scenes.md            场景资产文案
-│   ├── props.md             道具资产文案
-│   ├── images/              可上传参考图
-│   └── frames/              分镜图成品
-├── knowledge/               通用知识库，按类别集中
-│   ├── README.md
-│   ├── cinematography/      摄影语言：景别、机位、构图、运镜
-│   ├── performance/         动画表演：表情、呼吸、姿态、重心
-│   ├── editing_and_coverage/ 剪辑与镜头覆盖：coverage、reaction、POV、montage
-│   ├── ai_generation/       AI 生成工艺：生成决策、模型渲染、实测复盘
-│   └── templates/           选读镜头模板库
-├── output/ep01/             单集产物
-│   ├── director_analysis.md
-│   ├── cinematography.md
-│   ├── beat_facts.yaml
-│   ├── seedance_prompts.md
-│   ├── storyboard_frame_prompts.md
-│   └── seedance_storyboard_prompts.md
+├── script/                         source story text
+├── assets/                         locked character / scene / prop references
+├── knowledge/
+│   ├── principles.md               core rules of the workflow
+│   ├── prompt_patterns.md          reusable shot-chain patterns
+│   └── model_notes.md              renderer-specific practical notes
+├── output/
+│   └── ep01/
+│       └── prompt_cards.md         final usable prompt cards
 └── .claude/agents/
-    ├── director.md
-    ├── art_designer.md
-    ├── cinematography.md
-    ├── planner.md
-    └── storyboard.md
+    ├── fact.md                     extracts non-negotiable facts
+    ├── drama.md                    extracts conflict and state change
+    ├── prompt_director.md          turns state change into shots
+    └── reviewer.md                 rejects dead prompts
 ```
 
-## 虚拟剧组职务
+## Commands
 
-只保留当前从剧本到可生成视频真正需要的岗位。
+### `~fact`
 
-| 职务 | Agent | 产物 |
-|------|-------|------|
-| 导演 | `director` | `output/ep01/director_analysis.md` |
-| 美术 / 服化道 | `art_designer` | `assets/registry.md`、`assets/characters.md`、`assets/scenes.md`、`assets/props.md` |
-| 摄影指导 / 灯光 | `cinematography` | `output/ep01/cinematography.md` |
-| 一助 / 执行计划 | `planner` | `output/ep01/beat_facts.yaml` |
-| 分镜师 / 生成导演 | `storyboard` | `output/ep01/seedance_prompts.md`，必要时生成分镜图支线 |
+Read `script/`, `assets/registry.md`, `assets/characters.md`, `assets/scenes.md`, and `assets/props.md`.
 
-主流程：
+Output only a compact fact card:
 
 ```text
-~start -> ~design -> 人工生成/锁定参考图 -> ~cin -> ~plan -> ~prompt
+Excerpt:
+Visible characters:
+Required references:
+Location:
+Key props:
+Start state:
+End state:
+Non-negotiables:
 ```
 
-分镜图支线只在高风险 Beat 启用：
+Facts are not a prompt. They are the guardrails.
+
+### `~drama`
+
+Read the fact card and source excerpt.
+
+Output only the dramatic engine:
 
 ```text
-beat_facts.yaml -> storyboard_frame_prompts.md -> seedance_storyboard_prompts.md
+Main desire:
+Opposition:
+State change:
+Viewer feeling:
+Behavior chain:
 ```
 
-## 单一事实源
+The behavior chain is mandatory. If there is no behavior chain, there is no video.
 
-1. `director_analysis.md` 是导演讲戏源。
-2. `cinematography.md` 是本集摄影、灯光、色彩和动漫光影落地源。
-3. `beat_facts.yaml` 是逐 Beat 唯一事实锚点。
-4. `seedance_prompts.md` 和 `seedance_storyboard_prompts.md` 只能渲染事实，不得改写事实。
-5. 不创建单 Beat 热修文件。需要修某一拍，就回写 `beat_facts.yaml` 和对应最终 prompt。
+### `~prompt`
 
-## 知识库使用
+Read the fact card, drama card, and relevant `knowledge/` files.
 
-通用规则只放 `knowledge/`，本集规则只放 `output/ep01/`，具体资产只放 `assets/`。
+Output a prompt card that the user can paste into Seedance or another video model:
 
-阶段读取规则：
+```text
+Recommended duration:
+Recommended shot count:
+Upload order:
+Direct prompt:
+```
 
-- `~cin` 必读：
-  - `knowledge/cinematography/shot_and_camera_language.md`
-- `~plan` 必读：
-  - `knowledge/ai_generation/generation_decision_library.md`
-  - `knowledge/editing_and_coverage/coverage_scene_pattern_library.md`
-  - `knowledge/ai_generation/video_field_test_findings.md`
-- `~prompt` 必读：
-  - `knowledge/cinematography/shot_and_camera_language.md`
-  - `knowledge/performance/performance_signal_library.md`
-  - `knowledge/editing_and_coverage/coverage_scene_pattern_library.md`
-  - `knowledge/ai_generation/generation_decision_library.md`
-  - `knowledge/ai_generation/model_renderer_playbooks.md`
-  - `knowledge/ai_generation/video_field_test_findings.md`
+Default for character-driven short drama:
 
-`knowledge/templates/cinematic_shot_templates.md` 只在确实需要模板化镜头时选读。
+- `5-7s`
+- `6-8 shots`
+- one action or reaction per shot
+- explicit shot size per shot
+- visible state change
+- very few hard prohibitions
 
-`knowledge/ai_generation/generation_decision_library.md` 只负责选择生成策略。选定策略后，必须继续读取对应模式手册：
+### `~review`
 
-- 全能模式：`knowledge/ai_generation/modes/omnipotent_mode.md`
-- 分镜图驱动：`knowledge/ai_generation/modes/storyboard_frame_mode.md`
-- 首尾帧：`knowledge/ai_generation/modes/start_end_frame_mode.md`
-- 单张行为起始帧：`knowledge/ai_generation/modes/action_start_frame_mode.md`
+Read the final prompt only. Do not admire it. Try to reject it.
 
-## 指令
+Reject the prompt if:
 
-### `~start` 导演讲戏
+- it describes a situation but not a behavior chain
+- it uses fewer than 5 shots for a fast emotional beat
+- it has no clear state change
+- it puts too many facts and prohibitions into every shot
+- visible characters lack uploaded references
+- the last shot does not land on a changed relationship
 
-1. 读取 `script/` 原文。
-2. 读取 `assets/registry.md` 的平台、时代、美术基础和资产约束。
-3. 调用 `director`。
-4. 输出 `output/ep01/director_analysis.md`。
-5. 自检：Beat 是否有起始状态、动作变化、截止边界、结束状态。
+## Important Principle
 
-### `~design` 美术 / 服化道
+The final prompt is not a summary of all upstream work.
 
-1. 读取 `output/ep01/director_analysis.md`。
-2. 读取 `assets/registry.md`。
-3. 调用 `art_designer`。
-4. 输出或更新 `assets/characters.md`、`assets/scenes.md`、`assets/props.md`、`assets/registry.md`。
-5. 自检：资产是否有唯一名称、路径、状态、时代约束和可上传参考图位置。
+The final prompt is a directed performance instruction:
 
-### `~cin` 摄影与灯光概念
+```text
+stimulus -> reaction -> pressure -> changed state -> relationship landing
+```
 
-1. 读取 `director_analysis.md`、`assets/scenes.md`、`assets/characters.md`。
-2. 检索摄影相关知识库。
-3. 调用 `cinematography`。
-4. 输出 `output/ep01/cinematography.md`。
-5. 自检：是否明确本集光源、色彩、景别、机位、运镜、角色阴影层、边缘光、背景层级和禁忌。
-
-### `~plan` 结构化事实源
-
-1. 读取 `director_analysis.md`、`cinematography.md`、`assets/registry.md`、`assets/characters.md`、`assets/scenes.md`、`assets/props.md`。
-2. 检索 `editing_and_coverage/` 与 `ai_generation/` 知识库。
-3. 调用 `planner`。
-4. 输出 `output/ep01/beat_facts.yaml`。
-5. 自检：每个 Beat 必须锁定故事事实、blocking、axis、object continuity、state transition、shot contract。
-
-### `~prompt` 生成提示词
-
-1. 读取 `beat_facts.yaml`、`cinematography.md`、`assets/registry.md`、`assets/characters.md`、`assets/scenes.md`、`assets/props.md`。
-2. 确认目标渲染器；当前 ep01 默认 `seedance`。
-3. 检索分镜与模型知识库。
-4. 调用 `storyboard`。
-5. 输出 `seedance_prompts.md`。
-6. 如果某 Beat 命中分镜图支线，输出 `storyboard_frame_prompts.md` 和 `seedance_storyboard_prompts.md`。
-7. 自检：最终 prompt 是否继承 `beat_facts.yaml`，上传顺序是否清楚，禁止事项是否写进 prompt。
-
-## 重要原则
-
-- 不保留未被主流程使用的阶段产物。
-- 不保留可选部门 Agent。
-- 同类规则只放一个地方。
-- 任何模型提示词都必须从 `beat_facts.yaml` 渲染，不得另起事实源。
-- 分镜图支线不是默认流程，只处理高风险 Beat。
+When in doubt, delete theory and write behavior.
