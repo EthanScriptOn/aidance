@@ -8,10 +8,17 @@ This project exists for one outcome:
 
 Default output language is Chinese. Keep only unavoidable model / UI terms in English, such as `Seedance`, `image-to-video`, `Shot`, or `9:16`.
 
-Do not organize the workflow around film-department reports. Organize it around the smallest chain that produces a usable AI video prompt:
+Do not organize the workflow around film-department reports. Organize it around two first-principles problems:
 
 ```text
-事实 -> 戏剧 -> 镜头行为链 -> 提示词 -> 复核
+多集连续性：人物、道具、场景不能乱
+单条可生成性：每个视频片段必须有人物状态变化和镜头行为链
+```
+
+So the full production line is:
+
+```text
+全系列资产库 -> 本集资产清单 -> 本集戏剧脊柱 -> 片段提示词卡 -> 实测反馈回写
 ```
 
 ## Project Structure
@@ -24,10 +31,16 @@ aidance/
 │   ├── principles.md               core rules of the workflow
 │   ├── prompt_patterns.md          reusable shot-chain patterns
 │   └── model_notes.md              renderer-specific practical notes
+├── templates/                       reusable output templates
 ├── output/
 │   └── ep01/
-│       └── prompt_cards.md         final usable prompt cards
+│       ├── asset_manifest.md       per-episode asset use and new asset needs
+│       ├── episode_spine.md        per-episode clip list and state changes
+│       ├── prompt_cards.md         final usable prompt cards
+│       └── test_notes.md           generation results and reusable lessons
 └── .claude/agents/
+    ├── manifest.md                builds per-episode asset manifests
+    ├── spine.md                   builds per-episode dramatic spines
     ├── fact.md                     extracts non-negotiable facts
     ├── drama.md                    extracts conflict and state change
     ├── prompt_director.md          turns state change into shots
@@ -35,6 +48,58 @@ aidance/
 ```
 
 ## Commands
+
+### `~episode`
+
+Start a new episode from a script file.
+
+Read `assets/registry.md`, `assets/characters.md`, `assets/scenes.md`, `assets/props.md`, and the selected script.
+
+Create these files under `output/epXX/`:
+
+```text
+asset_manifest.md
+episode_spine.md
+prompt_cards.md
+test_notes.md
+```
+
+Rules:
+
+- Do not generate video prompts before the asset manifest is clear.
+- Do not invent new asset appearances inside video prompts.
+- If a new character, prop, scene, or state variant is needed, record it in `asset_manifest.md` first.
+- If a clip has no state change, merge it with a neighboring clip or drop it.
+
+### `~manifest`
+
+Create or update the episode asset manifest.
+
+Output:
+
+```text
+复用资产：
+新增资产需求：
+变体需求：
+本集关键道具归属变化：
+暂不进入视频生成的问题：
+```
+
+### `~spine`
+
+Create or update the episode spine.
+
+Output:
+
+```text
+Clip 编号：
+原文范围：
+片段名：
+状态变化：
+核心行为链：
+建议时长：
+建议镜头数：
+```
 
 ### `~fact`
 
@@ -98,6 +163,23 @@ Default for character-driven short drama:
 - very few hard prohibitions
 
 Write the final prompt card in Chinese by default.
+
+### `~notes`
+
+After testing generated videos, update `test_notes.md`.
+
+Promote only reusable lessons into `knowledge/model_notes.md` or `knowledge/prompt_patterns.md`.
+
+Output:
+
+```text
+Clip：
+结果：好 / 可用但需修 / 失败
+有效原因：
+失败原因：
+下一版修正：
+是否回写知识库：
+```
 
 ### `~review`
 

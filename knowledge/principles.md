@@ -6,6 +6,72 @@ The workflow exists to create a video prompt that produces living characters.
 
 Professional film knowledge is useful only when it becomes visible behavior on screen.
 
+For a multi-episode series, the workflow must solve only two core problems:
+
+```text
+1. 连续性：人物、道具、场景和状态不能乱
+2. 可生成性：每个短视频片段必须有清楚的人物状态变化
+```
+
+Everything else is supporting material.
+
+## Multi-Episode Production Line
+
+Every episode should follow this path:
+
+```text
+script/epXX
+-> output/epXX/asset_manifest.md
+-> output/epXX/episode_spine.md
+-> output/epXX/prompt_cards.md
+-> output/epXX/test_notes.md
+-> knowledge updates only when a lesson is reusable
+```
+
+### Asset Manifest
+
+The manifest answers:
+
+- Which locked assets are reused?
+- Which new assets are needed?
+- Which variants are needed?
+- Which props change ownership or state?
+- Which asset questions block video generation?
+
+It is not a prompt.
+
+### Episode Spine
+
+The spine answers:
+
+- Which clips should this episode become?
+- What state change does each clip carry?
+- What behavior chain makes each clip playable?
+- How long and how many shots should each clip use?
+
+It is not a prompt.
+
+### Prompt Cards
+
+Prompt cards answer:
+
+- What images should the user upload?
+- What duration and shot count should be used?
+- What exactly happens in each shot?
+- What minimal restrictions prevent the model from going wrong?
+
+### Test Notes
+
+Test notes answer:
+
+- Which generated clips worked?
+- Why did they work?
+- Which clips failed?
+- What should change in the next prompt?
+- Is this lesson episode-specific or reusable?
+
+Only reusable lessons should be promoted into `knowledge/`.
+
 ## The Core Chain
 
 Every usable clip needs:
