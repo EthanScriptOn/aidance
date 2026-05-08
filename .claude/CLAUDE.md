@@ -29,6 +29,7 @@ aidance/
 ├── assets/                         locked character / scene / prop references
 ├── knowledge/
 │   ├── principles.md               core rules of the workflow
+│   ├── asset_generation.md         asset generation rules
 │   ├── prompt_patterns.md          reusable shot-chain patterns
 │   └── model_notes.md              renderer-specific practical notes
 ├── templates/                       reusable output templates
@@ -59,6 +60,7 @@ Create these files under `output/epXX/`:
 
 ```text
 asset_manifest.md
+asset_regen_plan.md（如需要重跑资产）
 episode_spine.md
 prompt_cards.md
 test_notes.md
@@ -69,6 +71,7 @@ Rules:
 - Do not generate video prompts before the asset manifest is clear.
 - Do not invent new asset appearances inside video prompts.
 - If a new character, prop, scene, or state variant is needed, record it in `asset_manifest.md` first.
+- If assets need to be regenerated, create `asset_regen_plan.md` before prompt generation.
 - If a clip has no state change, merge it with a neighboring clip or drop it.
 
 ### `~manifest`
