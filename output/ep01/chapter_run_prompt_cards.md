@@ -1,566 +1,536 @@
-# Chapter Run Prompt Cards · 血尸章节
+# 章节运行提示词卡 ·《血尸》
 
-This run follows the first-principles workflow:
+本文件按新流程运行：
 
 ```text
-Facts -> Drama -> Shot Chain -> Prompt -> Review
+事实 -> 戏剧 -> 镜头行为链 -> 直贴提示词 -> 复核
 ```
 
-Chapter strategy:
+章节策略：
 
-- Do not adapt every sentence.
-- Convert the chapter into short playable video clips.
-- Each clip has one behavior change or information turn.
-- Character drama uses 6s / 7 shots by default.
-- Threat / mechanism beats use 5-8s with 4-7 shots.
+- 不逐句改编原文。
+- 把整章拆成短视频片段。
+- 每个片段只承担一个“信息转折”或“人物状态变化”。
+- 人物冲突戏默认 6 秒 / 7 镜头。
+- 动作、恐怖、机制戏按 5-10 秒处理。
 
-Global style for all cards:
+全章统一风格：
 
 ```text
-9:16 vertical Chinese suspense manga style, rough ink lines, realistic eastern characters, 1960s-1970s rural Hunan tomb-raider era, no modern objects. Cold blue-white moonlight cuts from upper right; right faces and shoulders have rim light, left sides fall into shadow. Cave interiors and forest depths stay pure black unless a reveal shot says otherwise.
+9:16 竖屏，中国探险悬疑漫画风，硬朗线条，粗粝质感，写实东方人物比例，1960-1970 年代湖南农村土夫子时代，无现代物品。冷蓝白月光从画面右上方斜切，人物右脸和右肩有冷白边缘光，左脸和身体背光面压入暗部。洞内、林地深处和怪物来向保持大面积纯黑，除非揭示镜头明确需要露出局部。
 ```
 
-## Chapter Drama Spine
+## 全章戏剧脊柱
 
 ```text
-01 血土钩子:
-normal excavation detail -> impossible wet omen
+01 血土钩子：
+普通挖土细节 -> 不可能的湿润异象
 
-02 老烟头定性:
-silent confusion -> named danger
+02 老烟头定性：
+众人沉默困惑 -> 危险被命名
 
-03 老二顶撞:
-gun-backed swagger -> embarrassed restraint
+03 老二顶撞：
+仗枪逞能 -> 被长辈压回去
 
-04 老三被呵斥:
-young protest -> physically shut down -> forced into rope-guard role
+04 老三被呵斥：
+少年不服 -> 被哥哥压住 -> 被迫成为守绳者
 
-05 洞口等待:
-bored waiting -> hears wrongness below
+05 洞口等待：
+无聊等待 -> 听见下面不对劲
 
-06 拉绳反力:
-rescue pull -> invisible tug-of-war
+06 拉绳反力：
+救援拉绳 -> 和黑暗里的力量拔河
 
-07 枪响逃跑:
-standoff -> gunshot -> rope release -> survival flight
+07 枪响逃跑：
+僵持 -> 枪响 -> 绳松 -> 求生逃跑
 
-08 断手与血红东西:
-escaped relief -> personal loss -> decision to return -> ambushed by presence
+08 断手与血红东西：
+逃出生天 -> 认出亲人线索 -> 想回去救人 -> 背后出现威胁
 
-09 血尸站起:
-terror -> practical fighting stance
+09 血尸站起：
+恐惧 -> 强迫自己进入战斗状态
 
-10 近身扑杀:
-instinctive defense -> temporary success -> weapon failure
+10 近身扑杀：
+本能防御 -> 暂时击退 -> 武器失效
 
-11 装死被踩:
-flight -> fall -> chooses stillness -> survives but is poisoned
+11 装死被踩：
+逃跑 -> 摔倒 -> 选择装死 -> 活下来但中毒
 
-12 帛片与第二怪脸:
-dying confusion -> preserves clue -> realizes the first monster was not the final threat
+12 帛片与第二怪脸：
+濒死混乱 -> 保存线索 -> 意识到第一个怪物不是最终威胁
 ```
 
 ---
 
 ## Clip 01 · 血土钩子
 
-Fact Card:
+事实卡：
 
 ```text
-Excerpt: lines 2-4
-Visible characters: none
-Required references: Luoyang shovel head, wilderness mound
-Location: Biaoziling wilderness mound at night
-Key props: Luoyang shovel head with abnormal deep reddish-brown wet soil
-Start state: four men are offscreen; the ground is silent
-End state: the abnormal soil becomes the first omen
-Non-negotiables: no people in this clip; abnormal liquid is the only warm color
+原文范围：第 2-4 行
+可见人物：无
+需要参考图：洛阳铲铲头、镖子岭荒野土丘
+地点：夜晚，镖子岭荒野土丘
+关键道具：带异常深红褐湿土的洛阳铲铲头
+开始状态：四人都在画外，地面安静
+结束状态：异常湿土成为全章第一个不祥信号
+不可错事实：本片段不出现人物；异常液体是画面唯一暖色
 ```
 
-Drama Card:
+戏剧卡：
 
 ```text
-Main desire: the image wants to hook the viewer before anyone explains it
-Opposition: the object is silent and ordinary-looking until the wet color appears
-State change: normal excavation tool -> impossible omen
-Viewer feeling: something under the soil is already wrong
-Behavior chain:
-1. Empty moonlit soil holds still.
-2. The shovel head is found in extreme close-up.
-3. Damp soil darkens around the metal edge.
-4. A deep reddish-brown wetness slowly spreads.
-5. Moonlight catches the metal and the wet soil differently.
-6. The frame holds long enough for the viewer to understand the omen.
+主要欲望：画面要先用一个异物钩住观众
+阻力：铲头本身安静、普通，异样要慢慢显出来
+状态变化：普通挖土工具 -> 不可能的地下异象
+观众感受：地底已经出事了
+行为链：
+1. 月光下的黄土静止。
+2. 镜头找到洛阳铲铲头。
+3. 铲口周围的湿土变暗。
+4. 深红褐湿润痕迹慢慢晕开。
+5. 月光打在铁器和湿土上，质感分开。
+6. 画面停住，让观众意识到不对劲。
 ```
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video
-Aspect ratio: 9:16
-Duration: about 5 seconds
-Shot count: 5
+建议模型：Seedance 2.0
+建议模式：图生视频
+画幅：9:16
+时长：约 5 秒
+镜头数：5
 
-Upload order:
-@Image1 = assets/images/prop_洛阳铲铲头_main.png
-@Image2 = assets/images/scene_镖子岭土丘_main.png
+上传顺序：
+@图片1 = assets/images/prop_洛阳铲铲头_main.png
+@图片2 = assets/images/scene_镖子岭土丘_main.png
 
-Direct prompt:
-Use @Image1 to lock the Luoyang shovel head and @Image2 to lock the moonlit wilderness mound. Generate a 9:16 vertical Chinese suspense manga video, about 5 seconds, 5 quiet shots. Core emotion: an ordinary excavation detail becomes the first impossible omen.
+直贴提示词：
+使用 @图片1 锁定洛阳铲铲头，使用 @图片2 锁定夜晚镖子岭荒野土丘。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 5 秒，5 个安静镜头。核心情绪：普通挖土细节变成第一个不可能的异象。
 
-Shot 1, empty ground close-up, 0.8s: Moonlit yellow-brown soil and low grass sit completely still, no people visible.
-Shot 2, extreme insert, 1.0s: The Luoyang shovel head is half-buried in the soil; cold moonlight creates a thin edge highlight on the metal.
-Shot 3, macro detail, 1.0s: Damp soil at the shovel mouth slowly darkens, as if moisture is spreading from underground.
-Shot 4, extreme close-up, 1.2s: A deep reddish-brown wetness gathers around the shovel edge, the only warm color in the cold blue night.
-Shot 5, held omen shot, 1.0s: The frame holds on the shovel head and wet soil; nothing explains it, the silence makes it worse.
+Shot 1，地面近景，0.8 秒：月光下的黄褐土和低草完全静止，画面里没有人。
+Shot 2，极近插入镜头，1.0 秒：洛阳铲铲头半埋在土里，冷月光在铁器边缘勾出一条细亮线。
+Shot 3，微距细节，1.0 秒：铲口附近的湿土慢慢变暗，像有东西从地下渗出来。
+Shot 4，极近特写，1.2 秒：深红褐色湿润痕迹聚在铲头边缘，是冷蓝夜色里唯一暖色。
+Shot 5，不祥停顿镜，1.0 秒：画面停在铲头和湿土上，没有解释，安静反而更不对劲。
 
-Lighting: Cold blue-white moonlight from upper right; soil and grass stay dark and cold, the wet reddish-brown detail is the only warm accent.
-Do not show any people, dialogue, modern objects, cave interior, or extra tools.
+灯光：冷蓝白月光从右上方斜切；土和草保持冷暗，深红褐湿痕是唯一暖色锚点。
+禁止：不要出现人物、对白、现代物品、洞内画面或额外工具。
 ```
 
 ---
 
 ## Clip 02 · 老烟头定性
 
-Fact Card:
+事实卡：
 
 ```text
-Excerpt: line 5
-Visible characters: Old Yantou, Big Beard, Old Er, Old San
-Required references: all four characters, Luoyang shovel head, smoking pipe, mound
-Location: mound top at night
-Key props: Luoyang shovel head, smoking pipe
-Start state: four men stare at the abnormal shovel
-End state: Old Yantou names it as a blood corpse below
-Non-negotiables: Old Yantou controls the mood; reactions are staggered
+原文范围：第 5 行
+可见人物：老烟头、大胡子、老二、老三
+需要参考图：四名角色、洛阳铲铲头、旱烟枪、土丘场景
+地点：夜晚，土丘顶面
+关键道具：洛阳铲铲头、旱烟枪
+开始状态：四人盯着异常铲头
+结束状态：老烟头把下面定性为血尸
+不可错事实：老烟头压住气氛；其他人反应不能同步摆拍
 ```
 
-Drama Card:
+戏剧卡：
 
 ```text
-Main desire: the group wants an explanation
-Opposition: the explanation is worse than ignorance
-State change: confused silence -> named danger
-Viewer feeling: the old man knows something the young men do not
-Behavior chain:
-1. Four men stare at the shovel.
-2. Old Yantou taps the smoking pipe on the ground.
-3. Big Beard and Old Er wait for his judgment.
-4. Old Yantou quietly says the thing below is a blood corpse.
-5. Old Er's bravado pauses for half a beat.
-6. Big Beard's jaw tightens.
-7. Old San looks from the shovel to the black night, suddenly smaller.
+主要欲望：众人需要一个解释
+阻力：这个解释比不知道更可怕
+状态变化：沉默困惑 -> 危险被命名
+观众感受：老人知道年轻人不知道的东西
+行为链：
+1. 四个人盯着洛阳铲。
+2. 老烟头敲旱烟枪。
+3. 大胡子和老二等他开口。
+4. 老烟头低声说下面是血尸。
+5. 老二的莽劲停半拍。
+6. 大胡子下颌收紧。
+7. 老三从铲头看到黑夜，突然显得更小。
 ```
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 6 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 6 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老烟头_main.png
-@Image2 = assets/images/char_大胡子_main.png
-@Image3 = assets/images/char_老二·独眼二伢子_main.png
-@Image4 = assets/images/char_老三_main.png
-@Image5 = assets/images/scene_镖子岭土丘_main.png
-@Image6 = assets/images/prop_洛阳铲铲头_main.png
-@Image7 = assets/images/prop_旱烟枪_main.png
+上传顺序：
+@图片1 = assets/images/char_老烟头_main.png
+@图片2 = assets/images/char_大胡子_main.png
+@图片3 = assets/images/char_老二·独眼二伢子_main.png
+@图片4 = assets/images/char_老三_main.png
+@图片5 = assets/images/scene_镖子岭土丘_main.png
+@图片6 = assets/images/prop_洛阳铲铲头_main.png
+@图片7 = assets/images/prop_旱烟枪_main.png
 
-Direct prompt:
-Use @Image1 to lock Old Yantou, @Image2 Big Beard, @Image3 one-eyed Old Er, @Image4 Old San, @Image5 the mound, @Image6 the Luoyang shovel head, and @Image7 the smoking pipe. Generate a 9:16 vertical Chinese suspense manga video, about 6 seconds, 7 shots. Core emotion: the old man quietly names the danger and the whole group changes temperature.
+直贴提示词：
+使用 @图片1 锁定老烟头，@图片2 锁定大胡子，@图片3 锁定独眼老二，@图片4 锁定老三，@图片5 锁定土丘场景，@图片6 锁定洛阳铲铲头，@图片7 锁定旱烟枪。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 6 秒，7 个镜头。核心情绪：老烟头低声说出危险，整组人的气温都降下来。
 
-Shot 1, side medium-wide, 0.8s: Four men crouch or stand around the abnormal shovel head on the mound. Nobody speaks. The shovel is the center.
-Shot 2, smoking pipe insert, 0.6s: Old Yantou taps the smoking pipe against the ground, small and deliberate.
-Shot 3, Old Yantou close-up, 0.9s: He looks at the shovel first, then raises his eyes slightly, calm and heavy.
-Shot 4, two-shot reaction, 0.8s: Big Beard and Old Er wait; Old Er still carries a trace of arrogance, Big Beard is tense.
-Shot 5, Old Yantou medium close-up, 0.9s: He quietly says the thing below is a blood corpse, not shouting, just settling the air.
-Shot 6, staggered reaction close-ups, 1.2s: Old Er's mouth stops mid-breath; Big Beard's jaw tightens; Old San's eyes widen a little.
-Shot 7, group landing, 0.8s: The group is still around the shovel, but now the black ground below them feels like the real subject.
+Shot 1，偏侧中远景，0.8 秒：四人围在异常铲头旁，蹲或站在土丘顶面，没有人说话，铲头是中心。
+Shot 2，旱烟枪插入镜头，0.6 秒：老烟头把旱烟枪轻轻敲在地上，动作小而稳。
+Shot 3，老烟头近景，0.9 秒：他先看铲头，再稍稍抬眼，脸上平静但沉。
+Shot 4，双人反应镜，0.8 秒：大胡子和老二等他说话；老二还带一点莽劲，大胡子已经绷住。
+Shot 5，老烟头中近景，0.9 秒：他低声说下面是血尸，不喊，只是把空气压住。
+Shot 6，错位反应特写，1.2 秒：老二嘴边的气停住；大胡子下颌收紧；老三眼睛微微睁大。
+Shot 7，群像落点，0.8 秒：四人仍围着铲头，但观众感觉真正可怕的是他们脚下的黑土。
 
-Lighting: Cold moonlight from upper right; faces half-lit, left sides dark. The shovel wetness remains the only warm accent.
-Do not make everyone look at the camera. Do not turn the scene into a speech. Keep reactions staggered and quiet.
+灯光：冷月光从右上方斜切，人物脸半明半暗。铲头湿痕保留唯一暖色。
+禁止：不要让所有人看镜头，不要拍成老烟头正面演讲，反应必须错开。
 ```
 
 ---
 
 ## Clip 03 · 老二顶撞
 
-Fact Card:
+提示词卡：
 
 ```text
-Excerpt: lines 6-12
-Visible characters: Old Er, Old Yantou, Big Beard, Old San
-Required references: all four characters, smoking pipe, pistol, shovel/mound
-Location: mound top
-Key props: smoking pipe, Mauser pistol detail
-Start state: Old Yantou has named the danger
-End state: Old Er's bravado is mocked and knocked down
-Non-negotiables: Old Er is one-eyed; Big Beard is his father; Old Yantou blocks violence with pipe
-```
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 6 秒
+镜头数：7
 
-Drama Card:
+上传顺序：
+@图片1 = assets/images/char_老二·独眼二伢子_main.png
+@图片2 = assets/images/char_老烟头_main.png
+@图片3 = assets/images/char_大胡子_main.png
+@图片4 = assets/images/char_老三_main.png
+@图片5 = assets/images/scene_镖子岭土丘_main.png
+@图片6 = assets/images/prop_旱烟枪_main.png
+@图片7 = assets/images/prop_匣子炮_main.png
 
-```text
-Main desire: Old Er wants to prove he can handle the danger with a gun
-Opposition: Old Yantou and Big Beard treat him as reckless
-State change: swagger -> embarrassed restraint
-Viewer feeling: youth and guns are not enough for what is below
-Behavior chain:
-1. Old Er steps into the pressure line and talks big.
-2. His hand brushes the pistol at his waist.
-3. Big Beard snaps at him.
-4. Old Er tries to answer back.
-5. Big Beard raises a hand to hit him.
-6. Old Yantou's smoking pipe blocks the strike.
-7. Old Er lowers his head and smirks, then gets tapped down by Old Yantou.
-```
+直贴提示词：
+使用 @图片1 锁定独眼老二，@图片2 锁定老烟头，@图片3 锁定大胡子，@图片4 锁定老三，@图片5 锁定土丘场景，@图片6 锁定旱烟枪，@图片7 锁定旧匣子炮。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 6 秒，7 个快速镜头。核心情绪：老二想用枪和胆子证明自己，结果被长辈们当成莽撞压回去。
 
-Prompt Card:
+Shot 1，偏侧中远景，0.8 秒：老二从人群里往前顶一步，身体朝向老烟头，其他人围在土丘顶面。
+Shot 2，腰部插入镜头，0.6 秒：老二的手碰到腰间旧匣子炮，说明他的底气来自这把枪。
+Shot 3，老二近景，0.8 秒：他抬着下巴说狠话，独眼盯人，年轻、冲、很自信。
+Shot 4，大胡子中近景，0.8 秒：大胡子骂他，眉头压低，肩膀往前顶，像马上要动手。
+Shot 5，动作近景，0.7 秒：大胡子的手抬起来，老烟头的旱烟枪横过来挡住。
+Shot 6，老烟头近景，1.0 秒：老烟头带着不冷不热的笑，把父子俩一起数落住，完全不慌。
+Shot 7，反应落点，1.3 秒：老二低头露出一点尴尬的笑，又被老烟头用烟枪轻敲压住，老三在边缘看着。
 
-```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 6 seconds
-Shot count: 7
-
-Upload order:
-@Image1 = assets/images/char_老二·独眼二伢子_main.png
-@Image2 = assets/images/char_老烟头_main.png
-@Image3 = assets/images/char_大胡子_main.png
-@Image4 = assets/images/char_老三_main.png
-@Image5 = assets/images/scene_镖子岭土丘_main.png
-@Image6 = assets/images/prop_旱烟枪_main.png
-@Image7 = assets/images/prop_匣子炮_main.png
-
-Direct prompt:
-Use @Image1 to lock one-eyed Old Er, @Image2 Old Yantou, @Image3 Big Beard, @Image4 Old San, @Image5 the mound, @Image6 the smoking pipe, and @Image7 the old Mauser pistol. Generate a 9:16 vertical Chinese suspense manga video, about 6 seconds, 7 fast shots. Core emotion: Old Er tries to turn fear into swagger, but the older men shut him down.
-
-Shot 1, side medium-wide, 0.8s: Old Er steps forward from the group, body angled toward Old Yantou, the others around the mound.
-Shot 2, waist insert, 0.6s: Old Er's hand brushes the old Mauser pistol at his waist, showing where his confidence comes from.
-Shot 3, Old Er close-up, 0.8s: He speaks with a hard mouth and raised chin, one eye glaring, reckless and proud.
-Shot 4, Big Beard medium close-up, 0.8s: Big Beard snaps at him, brow lowered, shoulders pushing forward like he wants to hit him.
-Shot 5, action close-up, 0.7s: Big Beard's hand rises, but Old Yantou's smoking pipe cuts across and stops it.
-Shot 6, Old Yantou close-up, 1.0s: Old Yantou smiles without warmth, scolds the father and son together, completely unhurried.
-Shot 7, reaction landing, 1.3s: Old Er lowers his head with a brief embarrassed smirk; Old Yantou taps him with the pipe, and Old San watches from the edge.
-
-Lighting: Cold moonlight from upper right, strong shadows, rough manga ink lines.
-Do not confuse Old Er with Big Beard. Do not make the gun modern. Do not stage it as everyone facing the camera.
+灯光：冷蓝白月光从右上斜切，阴影重，漫画线条硬朗。
+禁止：不要把老二和大胡子混成一个人，不要把枪画成现代枪，不要拍成所有人正面排队看镜头。
 ```
 
 ---
 
 ## Clip 04 · 老三被呵斥
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 6 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 6 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/char_老二·独眼二伢子_main.png
-@Image3 = assets/images/char_老烟头_main.png
-@Image4 = assets/images/char_大胡子_main.png
-@Image5 = assets/images/scene_盗洞口_main.png
-@Image6 = assets/images/prop_土耗子_main.png
-@Image7 = assets/images/prop_旱烟枪_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/char_老二·独眼二伢子_main.png
+@图片3 = assets/images/char_老烟头_main.png
+@图片4 = assets/images/char_大胡子_main.png
+@图片5 = assets/images/scene_盗洞口_main.png
+@图片6 = assets/images/prop_土耗子_main.png
+@图片7 = assets/images/prop_旱烟枪_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 one-eyed Old Er, @Image3 Old Yantou, @Image4 Big Beard, @Image5 the night cave mouth, @Image6 the rope tool, and @Image7 the smoking pipe. Generate a 9:16 vertical Chinese suspense manga video, about 6 seconds, 7 fast shots. Core emotion: Old San is angry that he is not allowed to go down the cave; he talks back, gets physically shut down by his older brother, then has to swallow the protest while the others prepare to descend.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定独眼老二，@图片3 锁定老烟头，@图片4 锁定大胡子，@图片5 锁定夜晚盗洞口，@图片6 锁定土耗子，@图片7 锁定旱烟枪。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 6 秒，7 个快速镜头。核心情绪：老三因为不准下洞而不服，顶嘴后被二哥一把压住，只能把不甘吞回去。
 
-Shot 1, side medium-wide, 0.8s: The black cave mouth sits at lower right. Old Yantou stands near the cave mouth giving orders; Big Beard and Old Er are close to the descent line; Old San stands outside the group holding the tail end of the rope tool.
-Shot 2, Old San close-up, 0.7s: Old San frowns and steps forward half a step, mouth opening to protest, eyes stubborn.
-Shot 3, Old Yantou medium close-up, 0.7s: Old Yantou lightly blocks Old San with the smoking pipe, not really hitting him, half teasing and half commanding.
-Shot 4, Old San extreme expression close-up, 0.6s: Old San still refuses to give in. His mouth twists and eyes glance aside, young and stubborn.
-Shot 5, Old Er action close-up, 0.8s: One-eyed Old Er suddenly pushes in from the side and grabs Old San by the ear. The action is fast but readable.
-Shot 6, Old San reaction close-up, 0.9s: Old San's head tilts from the ear being pulled; his stubbornness disappears. He looks toward Big Beard for help, but Big Beard is already turning away to gather gear.
-Shot 7, group relationship landing, 1.5s: Old Er releases Old San. Old San rubs his ear with one hand and still holds the rope tool tail with the other. The three descent characters turn toward the black cave mouth while Old San remains outside the group.
+Shot 1，偏侧中远景，0.8 秒：黑洞口在画面右下方。老烟头在洞口旁发号施令，大胡子和老二靠近下洞队列，老三站在外侧，手里握着土耗子尾端。
+Shot 2，老三近景，0.7 秒：老三皱眉往前顶半步，嘴刚张开要抗议，眼神倔。
+Shot 3，老烟头中近景，0.7 秒：老烟头用旱烟枪轻轻挡住老三，不是真打，是半哄半压。
+Shot 4，老三极近表情，0.6 秒：老三还是不服，嘴角一撇，眼睛往旁边瞥，有少年气。
+Shot 5，老二动作近景，0.8 秒：独眼老二突然从侧面压进画面，一把揪住老三耳朵，动作快但清楚。
+Shot 6，老三反应特写，0.9 秒：老三被揪得歪头，刚才的倔劲瞬间收住；他偷看大胡子求救，但大胡子已经转身收拾家伙。
+Shot 7，群像关系落点，1.5 秒：老二松开老三。老三一只手揉耳朵，另一只手还攥着土耗子尾端；三名下洞者转向黑洞口，老三被留在队伍外。
 
-Lighting: Cold moonlight from upper right; the cave mouth stays pure black.
-Do not let anyone enter the cave in this clip. Do not turn the cave into stairs or a tunnel. Do not make Old San cry dramatically. Do not confuse Old Er with Big Beard.
+灯光：冷月光从右上斜切，洞口保持纯黑。
+禁止：本片段不要让任何人真正下洞；不要把洞口变成台阶或横向隧道；不要让老三夸张哭喊；不要混淆老二和大胡子。
 ```
 
 ---
 
 ## Clip 05 · 洞口等待，怪声出现
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 7 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 7 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/scene_盗洞口_main.png
-@Image3 = assets/images/prop_土耗子_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/scene_盗洞口_main.png
+@图片3 = assets/images/prop_土耗子_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the night cave mouth, and @Image3 the rope tool. Generate a 9:16 vertical Chinese suspense manga video, about 7 seconds, 7 shots. Core emotion: Old San waits above the cave, bored and annoyed, then realizes something below has gone wrong.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定夜晚盗洞口，@图片3 锁定土耗子。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 7 秒，7 个镜头。核心情绪：老三在洞口上方等得不耐烦，随后意识到下面出事了。
 
-Shot 1, wide cave-mouth shot, 0.8s: Old San sits or crouches alone beside the black cave mouth, holding the rope tool tail. The other men are unseen below.
-Shot 2, Old San medium close-up, 0.9s: He grows impatient, leans toward the cave, and calls down.
-Shot 3, cave-mouth insert, 0.8s: The black opening answers only with a delayed, muffled voice from below.
-Shot 4, Old San close-up, 0.8s: His annoyance fades; he tilts his head, trying to hear.
-Shot 5, rope-hand insert, 0.8s: His fingers tighten on the rope tail as a faint strange clicking-croaking sound comes from the dark.
-Shot 6, reaction close-up, 1.2s: Old San stops breathing for a beat, eyes widening, mouth closing before he can speak again.
-Shot 7, relationship landing, 1.7s: He remains above, small beside the cave mouth, listening into pure blackness while the rope in his hands becomes the only connection to the men below.
+Shot 1，洞口宽镜，0.8 秒：老三独自蹲或坐在黑洞口旁，手里抓着土耗子尾端，其他人都在洞下不可见。
+Shot 2，老三中近景，0.9 秒：他等得烦了，探身朝洞里喊话。
+Shot 3，洞口插入镜头，0.8 秒：黑洞口延迟传来模糊声音，但看不见任何人。
+Shot 4，老三近景，0.8 秒：他的烦躁慢慢消失，侧头去听。
+Shot 5，手和绳特写，0.8 秒：他手指收紧土耗子尾端，黑洞里传来细小怪异的咯咯声。
+Shot 6，反应特写，1.2 秒：老三呼吸停了一拍，眼睛睁大，想说话又闭上嘴。
+Shot 7，关系落点，1.7 秒：他仍在洞口上方，身形很小，手里的土耗子成了和洞下唯一的连接。
 
-Lighting: Cold moonlight, cave mouth pure black, rope edge faintly rim-lit.
-Do not show anyone inside the cave. Do not make the sound source visible. Do not add monsters yet.
+灯光：冷月光；洞口纯黑；绳子边缘有细冷白高光。
+禁止：不要显示洞内人物，不要显示声音来源，不要提前出现怪物。
 ```
 
 ---
 
 ## Clip 06 · 拉绳反力
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 7 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 7 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/scene_盗洞口_main.png
-@Image3 = assets/images/prop_土耗子_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/scene_盗洞口_main.png
+@图片3 = assets/images/prop_土耗子_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the cave mouth, and @Image3 the rope tool. Generate a 9:16 vertical Chinese suspense manga video, about 7 seconds, 7 shots. Core emotion: a simple rescue pull becomes a tug-of-war with something hidden below.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定洞口，@图片3 锁定土耗子。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 7 秒，7 个镜头。核心情绪：一次救援拉绳变成和黑暗里的未知力量拔河。
 
-Shot 1, medium-wide, 0.8s: Old San hears a shout from below and snaps into action beside the black cave mouth.
-Shot 2, foot-and-rope insert, 0.7s: He plants one foot hard in the dirt and grabs the rope tail with both hands.
-Shot 3, action medium shot, 0.9s: He pulls backward with his whole body; the rope slides out a little.
-Shot 4, rope insert, 0.7s: The rope suddenly jerks the opposite direction, snapping taut toward the black hole.
-Shot 5, Old San body shot, 1.0s: He almost gets dragged forward, knees bending and shoulders lurching toward the cave.
-Shot 6, mechanism close-up, 1.2s: He quickly wraps or braces the rope against his waist, then leans backward with his full body weight.
-Shot 7, standoff landing, 1.7s: Old San is leaned back at a hard angle, heels digging into dirt, rope taut into the pure black cave. The unseen force below holds him in place.
+Shot 1，中景，0.8 秒：老三听到洞下喊“拉”，立刻在黑洞口旁起身。
+Shot 2，脚和绳插入镜头，0.7 秒：他一脚蹬进土里，双手猛抓土耗子尾端。
+Shot 3，动作中景，0.9 秒：他整个人向后拉，绳子从洞里滑出一点。
+Shot 4，绳索特写，0.7 秒：绳子突然反向一拽，啪地绷紧，直指黑洞口。
+Shot 5，身体动作镜，1.0 秒：老三差点被拖向洞口，膝盖一弯，肩膀猛地前冲。
+Shot 6，机制近景，1.2 秒：他急中生智，把绳尾绕到腰间或抵在腰上，全身向后倒，用体重顶住。
+Shot 7，僵持落点，1.7 秒：老三后仰成很吃力的角度，脚跟抠住土，绳子绷进纯黑洞里，下面的力量看不见但存在。
 
-Lighting: Moonlight from upper right; rope has a thin cold rim light; cave interior stays pure black.
-Do not show the thing below. Do not let Old San fall into the cave. Keep the body mechanics readable.
+灯光：右上冷月光，绳子有细冷白边线，洞内完全纯黑。
+禁止：不要显示洞下的东西；不要让老三掉进洞；身体受力机制必须清楚。
 ```
 
 ---
 
 ## Clip 07 · 枪响，绳松，逃跑
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 6 seconds
-Shot count: 6
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 6 秒
+镜头数：6
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/scene_盗洞口_main.png
-@Image3 = assets/images/prop_土耗子_main.png
-@Image4 = assets/images/prop_匣子炮_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/scene_盗洞口_main.png
+@图片3 = assets/images/prop_土耗子_main.png
+@图片4 = assets/images/prop_匣子炮_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the cave mouth, @Image3 the rope tool bundle, and @Image4 the old Mauser pistol as a small prop detail. Generate a 9:16 vertical Chinese suspense manga video, about 6 seconds, 6 shots. Core emotion: the fight below breaks, the rope releases, and Old San chooses survival.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定洞口，@图片3 锁定土耗子 bundle，@图片4 作为旧匣子炮的小道具参考。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 6 秒，6 个镜头。核心情绪：洞下的僵持被枪声打断，绳子突然松开，老三选择逃命。
 
-Shot 1, standoff medium shot, 0.8s: Old San leans back against the taut rope, fighting the unseen force below.
-Shot 2, black cave insert, 0.6s: A sudden gunshot flashes faintly from inside the pure black cave, then darkness returns.
-Shot 3, Old San close-up, 0.8s: He hears his father shout for him to run; fear hits his face instantly.
-Shot 4, rope action insert, 0.8s: The rope suddenly goes slack and the rope tool bundle snaps upward out of the cave mouth.
-Shot 5, catch close-up, 1.0s: Old San catches the bundle against his chest, barely understanding what is attached.
-Shot 6, running medium shot, 2.0s: He turns and runs away from the cave without looking back, clutching the bundle.
+Shot 1，僵持中景，0.8 秒：老三后仰拉着绷紧的土耗子，和洞下看不见的力量僵持。
+Shot 2，黑洞口插入镜头，0.6 秒：洞内突然有一瞬枪火微闪，随即恢复纯黑。
+Shot 3，老三近景，0.8 秒：他听到父亲喊快跑，恐惧一下打到脸上。
+Shot 4，绳索动作特写，0.8 秒：绳子突然松掉，土耗子 bundle 从黑洞口猛地弹出来。
+Shot 5，接住近景，1.0 秒：老三把 bundle 抱到胸前，还没看清上面挂着什么。
+Shot 6，逃跑中景，2.0 秒：他抱着 bundle 转身就跑，不再回头。
 
-Lighting: Cold moonlight outside; the gun flash is a very brief warm flicker only inside the cave.
-Do not reveal people inside the cave. Do not clearly reveal the attached clue yet. Do not make the gun modern.
+灯光：洞外冷月光；枪火只是一瞬暖闪，不能持续照明。
+禁止：不要显示洞内人物；不要提前清楚揭示 bundle 上挂的线索；不要把枪画成现代枪。
 ```
 
 ---
 
 ## Clip 08 · 认出断手，回头见血红东西
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 8 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 8 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/scene_荒野林地_main.png
-@Image3 = assets/images/prop_土耗子_main.png
-@Image4 = assets/images/prop_老二断臂_fist.png
-@Image5 = assets/images/char_血尸_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/scene_荒野林地_main.png
+@图片3 = assets/images/prop_土耗子_main.png
+@图片4 = assets/images/prop_老二断臂_fist.png
+@图片5 = assets/images/char_血尸_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the dark wilderness forest, @Image3 the rope tool bundle, @Image4 the severed-arm clue in a non-graphic dark-brown manga treatment, and @Image5 the blood-corpse creature. Generate a 9:16 vertical Chinese suspense manga video, about 8 seconds, 7 shots. Core emotion: Old San escapes, identifies the terrible clue, decides to turn back, then discovers he is not alone.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定黑暗荒野林地，@图片3 锁定土耗子 bundle，@图片4 锁定深褐色非写实处理的断臂线索，@图片5 锁定血尸。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 8 秒，7 个镜头。核心情绪：老三逃出来后认出亲人线索，刚想回去救人，就发现背后已经有东西等着他。
 
-Shot 1, forest medium-wide, 0.8s: Old San stops in the dark forest, bent over and breathing hard, still clutching the bundle.
-Shot 2, object insert, 1.0s: He opens the bundle and sees a small dark-brown severed-arm clue attached to it, not huge, not graphic, but unmistakably personal.
-Shot 3, Old San reaction close-up, 1.0s: He recognizes it as Old Er's. His face breaks for one second, then he clamps the emotion down.
-Shot 4, decision close-up, 0.9s: He grits his teeth and turns his body as if he wants to go back to save them.
-Shot 5, turning medium shot, 1.0s: His head turns first, then shoulders follow; the forest behind him enters the frame.
-Shot 6, delayed reveal, 1.3s: In the dark behind him, a blood-red human-shaped thing crouches between tree trunks, watching him.
-Shot 7, relationship landing, 2.0s: Old San freezes in the foreground with the bundle in his arms; the blood-red thing remains low and still in the background, both locked in the same axis.
+Shot 1，林地中远景，0.8 秒：老三在黑暗林地里停下，弯腰喘气，怀里抱着 bundle。
+Shot 2，道具插入镜头，1.0 秒：他打开 bundle，看见小面积深褐色断臂线索挂在上面，不巨大、不血腥，但私人而可怕。
+Shot 3，老三反应近景，1.0 秒：他认出那是老二的东西，脸崩了一下，又硬压回去。
+Shot 4，决心近景，0.9 秒：他咬牙，身体转向来路，想回去救人。
+Shot 5，转身中景，1.0 秒：他先回头，肩膀跟着转，身后的树林进入画面。
+Shot 6，延迟揭示，1.3 秒：黑暗树干间，一个血红人形东西蹲在那里，正盯着他。
+Shot 7，对峙落点，2.0 秒：老三抱着 bundle 僵在前景，血红东西在背景低伏不动，两者处在同一对峙轴线上。
 
-Lighting: Forest is mostly black-green shadow with thin moon patches. The creature is only partially readable at first.
-Do not make the severed clue oversized or graphic. Do not reveal the creature before Shot 6. Do not make it a zombie crowd; only one thing.
+灯光：林地大面积黑绿，只有零星月光斑；怪物先只局部可读。
+禁止：断臂线索不要巨大化或血腥展示；Shot 6 前不要露出血尸；不要生成一群怪物，只能有一个。
 ```
 
 ---
 
 ## Clip 09 · 血尸站起，老三拔枪
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 7 seconds
-Shot count: 7
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 7 秒
+镜头数：7
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/char_血尸_main.png
-@Image3 = assets/images/scene_荒野林地_main.png
-@Image4 = assets/images/prop_匣子炮_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/char_血尸_main.png
+@图片3 = assets/images/scene_荒野林地_main.png
+@图片4 = assets/images/prop_匣子炮_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the blood-corpse creature, @Image3 the dark forest, and @Image4 the old Mauser pistol. Generate a 9:16 vertical Chinese suspense manga video, about 7 seconds, 7 shots. Core emotion: Old San is terrified, but he forces himself into a practical fighting stance.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定血尸，@图片3 锁定黑暗林地，@图片4 锁定旧匣子炮。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 7 秒，7 个镜头。核心情绪：老三害怕到恶心，但逼自己进入战斗状态。
 
-Shot 1, two-plane medium-wide, 0.8s: Old San stands foreground left; the blood-corpse creature crouches in background shadow between trees.
-Shot 2, creature medium shot, 0.8s: The creature slowly rises from its crouch, wet dark red-brown body catching tiny cold highlights.
-Shot 3, Old San close-up, 0.8s: His face tightens with disgust and fear; eyes widen, mouth closes hard.
-Shot 4, hand insert, 0.7s: His hand reaches to his waist and grips the old Mauser pistol.
-Shot 5, medium action shot, 0.9s: He backs away while drawing the pistol, forcing the barrel toward the creature.
-Shot 6, pistol close-up, 0.8s: The old pistol trembles slightly in his hands but stays aimed.
-Shot 7, standoff landing, 2.2s: Old San retreats step by step, pistol raised; the creature stands fully now, silent and unnatural in the forest dark.
+Shot 1，双层中远景，0.8 秒：老三在前景左侧，血尸蹲在后景树影之间。
+Shot 2，血尸中景，0.8 秒：血尸慢慢从蹲伏中站起来，深红褐湿冷的身体只露出少量冷光边。
+Shot 3，老三近景，0.8 秒：老三脸上恐惧和恶心一起绷住，眼睛睁大，嘴唇压紧。
+Shot 4，手部插入镜头，0.7 秒：他的手伸到腰间，握住旧匣子炮。
+Shot 5，动作中景，0.9 秒：他一边后退一边拔枪，枪口强迫自己指向血尸。
+Shot 6，枪口特写，0.8 秒：旧枪在他手里微微发抖，但仍对准。
+Shot 7，僵持落点，2.2 秒：老三举枪后退，血尸完全站起，沉默又不自然地立在林地黑暗中。
 
-Lighting: Cold moon patches and black forest depth; creature highlights are minimal, not fully lit.
-Do not make the pistol modern. Do not make Old San heroic and calm; he is scared but functional.
+灯光：林地只有冷月光斑和黑暗层次，血尸不要全亮。
+禁止：不要把匣子炮画成现代枪；老三不是冷静英雄，他是害怕但能行动。
 ```
 
 ---
 
 ## Clip 10 · 近身扑杀，枪卡壳
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 8 seconds
-Shot count: 8
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 8 秒
+镜头数：8
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/char_血尸_main.png
-@Image3 = assets/images/scene_荒野林地_main.png
-@Image4 = assets/images/prop_匣子炮_main.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/char_血尸_main.png
+@图片3 = assets/images/scene_荒野林地_main.png
+@图片4 = assets/images/prop_匣子炮_main.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the blood-corpse creature, @Image3 the forest, and @Image4 the old Mauser pistol. Generate a 9:16 vertical Chinese suspense manga action video, about 8 seconds, 8 fast shots. Core emotion: Old San survives the first attack by instinct, then his only weapon fails.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定血尸，@图片3 锁定林地，@图片4 锁定旧匣子炮。生成一段 9:16 竖屏中国探险悬疑漫画动作视频，约 8 秒，8 个快速镜头。核心情绪：老三靠本能躲过第一扑，暂时击退血尸，然后唯一武器卡壳。
 
-Shot 1, creature lunge medium shot, 0.7s: The creature suddenly folds forward and launches toward Old San.
-Shot 2, Old San reaction close-up, 0.6s: Old San's eyes snap wide as the creature enters his space.
-Shot 3, extreme proximity shot, 0.8s: The creature's face rushes close to Old San's face, too close and wrong.
-Shot 4, falling-back action shot, 0.9s: Old San falls backward while firing the old Mauser upward at close range.
-Shot 5, impact medium shot, 0.8s: Brief muzzle flashes push the creature back several steps; keep the impact stylized manga, not graphic.
-Shot 6, Old San close-up, 0.8s: Old San thinks he has a chance, breath sharp, eyes locked.
-Shot 7, pistol insert, 0.8s: He pulls the trigger again. The pistol jams with a hard mechanical click.
-Shot 8, terror landing, 2.6s: Old San stares at the jammed pistol, then at the creature; the weapon is useless and the forest suddenly feels huge.
+Shot 1，血尸扑来中景，0.7 秒：血尸突然弓身，朝老三扑来。
+Shot 2，老三反应特写，0.6 秒：老三眼睛猛地睁大，血尸已经压进他的空间。
+Shot 3，极近压迫镜，0.8 秒：血尸的脸冲到老三脸前，距离过近，气味和压迫感扑面。
+Shot 4，后倒开枪动作镜，0.9 秒：老三顺势向后倒，同时用旧匣子炮近距离向上开火。
+Shot 5，冲击中景，0.8 秒：短促枪火把血尸逼退几步，冲击用漫画化处理，不血腥铺陈。
+Shot 6，老三近景，0.8 秒：老三以为有机会，喘息急促，眼神重新锁住血尸。
+Shot 7，枪械插入镜头，0.8 秒：他再次扣扳机，旧枪只发出一声硬冷的卡壳声。
+Shot 8，恐惧落点，2.6 秒：老三看着卡住的枪，再看向血尸，武器失效，林地一下子变得巨大而空。
 
-Lighting: Cold forest darkness with very brief warm muzzle flashes that vanish immediately.
-Do not make the gun modern. Do not overplay gore. Keep the action readable and short.
+灯光：冷黑林地，枪口闪只是一瞬暖光，闪后立刻回到冷暗。
+禁止：不要把枪画成现代枪；不要过度血腥；动作必须清楚短促。
 ```
 
 ---
 
 ## Clip 11 · 摔倒装死，被踩过去
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 8 seconds
-Shot count: 8
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 8 秒
+镜头数：8
 
-Upload order:
-@Image1 = assets/images/char_老三_main.png
-@Image2 = assets/images/char_血尸_main.png
-@Image3 = assets/images/scene_荒野林地_main.png
-@Image4 = assets/images/prop_土耗子_main.png
-@Image5 = assets/images/prop_老二断臂_fist.png
+上传顺序：
+@图片1 = assets/images/char_老三_main.png
+@图片2 = assets/images/char_血尸_main.png
+@图片3 = assets/images/scene_荒野林地_main.png
+@图片4 = assets/images/prop_土耗子_main.png
+@图片5 = assets/images/prop_老二断臂_fist.png
 
-Direct prompt:
-Use @Image1 to lock Old San, @Image2 the blood-corpse creature, @Image3 the forest, @Image4 the rope tool bundle, and @Image5 the dark-brown clue attached to it. Generate a 9:16 vertical Chinese suspense manga video, about 8 seconds, 8 shots. Core emotion: Old San's last trick is to stop acting alive.
+直贴提示词：
+使用 @图片1 锁定老三，@图片2 锁定血尸，@图片3 锁定林地，@图片4 锁定土耗子 bundle，@图片5 锁定深褐色线索物。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 8 秒，8 个镜头。核心情绪：老三最后的办法不是跑得更快，而是停止像活人一样动。
 
-Shot 1, running medium shot, 0.7s: Old San runs through the forest, clutching the bundle, not looking back.
-Shot 2, foot insert, 0.6s: His foot catches on a hidden tree stump or root.
-Shot 3, fall action shot, 0.9s: He crashes forward and hits the ground hard; the bundle slides slightly ahead of him.
-Shot 4, ground close-up, 0.8s: Old San slaps the dirt in frustration, then hears the creature closing behind him.
-Shot 5, decision close-up, 0.8s: His face hardens; instead of getting up, he forces himself flat against the ground.
-Shot 6, low ground angle, 1.0s: The creature approaches from above the frame, heavy and unnatural.
-Shot 7, pressure shot, 1.2s: The creature steps over him and presses one foot onto his back, then keeps moving. Old San clenches but does not cry out.
-Shot 8, aftermath close-up, 2.0s: Old San remains flat and shaking, eyes unfocused, realizing something is wrong with his body.
+Shot 1，奔跑中景，0.7 秒：老三抱着 bundle 在林地里跑，不敢回头。
+Shot 2，脚部插入镜头，0.6 秒：他的脚被隐藏的树墩或树根绊住。
+Shot 3，摔倒动作镜，0.9 秒：他整个人向前摔倒，bundle 滑到前方一点。
+Shot 4，地面近景，0.8 秒：老三气得一巴掌拍在地上，随即听到身后逼近的动静。
+Shot 5，决定近景，0.8 秒：他的脸硬下来，没有爬起，而是强迫自己贴地不动。
+Shot 6，贴地低角度，1.0 秒：血尸从画面上方压近，沉重而不自然。
+Shot 7，压迫镜，1.2 秒：血尸一脚踩过老三后背，又继续往前走；老三绷住身体，不喊出声。
+Shot 8，后果特写，2.0 秒：老三仍趴在地上发抖，眼神开始发虚，意识到身体不对劲。
 
-Lighting: Forest mostly black, cold rim light along Old San's shoulder and the creature's edge.
-Do not make the creature stop to attack again. Do not make Old San jump up. Keep the step stylized and non-graphic.
+灯光：林地大部分黑，老三肩线和血尸边缘有冷月光轮廓。
+禁止：不要让血尸停下来补杀；不要让老三突然跳起；踩踏处理为漫画化压迫，不做血腥展示。
 ```
 
 ---
 
 ## Clip 12 · 帛片入袖，第二张怪脸
 
-Prompt Card:
+提示词卡：
 
 ```text
-Recommended model: Seedance 2.0
-Recommended mode: image-to-video, multi-shot
-Aspect ratio: 9:16
-Duration: about 10 seconds
-Shot count: 8
+建议模型：Seedance 2.0
+建议模式：图生视频，单次请求 multi-shot
+画幅：9:16
+时长：约 10 秒
+镜头数：8
 
-Upload order:
-@Image1 = assets/images/char_老三_tired.png
-@Image2 = assets/images/scene_荒野林地_main.png
-@Image3 = assets/images/prop_老二断臂_cloth.png
-@Image4 = assets/images/prop_古帛片_main.png
-@Image5 = assets/images/char_第二实体怪脸_partial.png
+上传顺序：
+@图片1 = assets/images/char_老三_tired.png
+@图片2 = assets/images/scene_荒野林地_main.png
+@图片3 = assets/images/prop_老二断臂_cloth.png
+@图片4 = assets/images/prop_古帛片_main.png
+@图片5 = assets/images/char_第二实体怪脸_partial.png
 
-Direct prompt:
-Use @Image1 to lock poisoned exhausted Old San, @Image2 the dark forest, @Image3 the dark-brown hand clue holding the cloth fragment, @Image4 the ancient silk fragment, and @Image5 the partial huge eyeless face. Generate a 9:16 vertical Chinese suspense manga video, about 10 seconds, 8 shots. Core emotion: while dying, Old San chooses to preserve the clue, then realizes the first monster was not the final threat.
+直贴提示词：
+使用 @图片1 锁定中毒疲惫状态的老三，@图片2 锁定黑暗林地，@图片3 锁定握着帛片的深褐色线索物，@图片4 锁定古帛片，@图片5 锁定第二实体的局部巨大无瞳怪脸。生成一段 9:16 竖屏中国探险悬疑漫画风视频，约 10 秒，8 个镜头。核心情绪：老三濒死时仍选择保存线索，随后发现刚才的血尸并不是最终威胁。
 
-Shot 1, low exhausted medium shot, 1.0s: Old San lies weakly on the forest floor, vision blurred, one arm dragging forward.
-Shot 2, POV blur insert, 1.0s: Through his blurred view, the dark-brown hand clue on the ground seems to hold a small ancient silk fragment.
-Shot 3, crawling close-up, 1.2s: Old San painfully crawls toward it, breath shallow, fingers scraping dirt.
-Shot 4, hand-object insert, 1.2s: He pries the ancient silk fragment from the stiff hand clue. Keep it small and readable, not graphic.
-Shot 5, sleeve insert, 1.0s: He pushes the silk fragment into his sleeve and presses the fabric closed.
-Shot 6, poisoned face close-up, 1.1s: His hearing fades; his eyes are cloudy, face cold and gray, but the decision is complete.
-Shot 7, sound reaction, 1.0s: A faint clicking-croaking sound returns. Old San barely lifts his head, confused and afraid.
-Shot 8, final reveal, 2.5s: A huge partial eyeless face lowers from above into the frame, empty eyes staring down at him. Old San is tiny below it, already too weak to react fully.
+Shot 1，低位疲惫中景，1.0 秒：老三虚弱趴在林地地面，一只手艰难往前拖。
+Shot 2，模糊主观插入镜头，1.0 秒：透过他模糊的视线，地上的深褐色线索物里露出一小块古帛片。
+Shot 3，爬行动作近景，1.2 秒：老三痛苦地往前爬，呼吸很浅，手指刮过泥土。
+Shot 4，手和物特写，1.2 秒：他从线索物里艰难取出古帛片；物件小而清楚，不血腥。
+Shot 5，袖口插入镜头，1.0 秒：他把古帛片塞进自己袖子里，并用手压住袖口。
+Shot 6，中毒脸部特写，1.1 秒：他的听觉开始发虚，眼神蒙着一层雾，脸色冷灰，但选择已经完成。
+Shot 7，声音反应镜，1.0 秒：熟悉的咯咯怪声又出现，老三勉强抬头，困惑又害怕。
+Shot 8，终极揭示，2.5 秒：一张巨大的局部无瞳怪脸从上方压进画面，空洞的眼睛俯视他；老三在下方很小，已经虚弱到几乎反应不过来。
 
-Lighting: Very low moonlight, most of the forest black. The second face is only partially lit from above, not fully revealed.
-Do not show a full body for the second entity. Do not make the cloth fragment huge. Do not add extra monsters.
+灯光：极低照度月光，林地大面积黑；第二张怪脸只从上方露出局部，不完整亮相。
+禁止：不要展示第二实体全身；不要把古帛片画得很大；不要增加额外怪物。
 ```

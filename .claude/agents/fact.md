@@ -4,6 +4,8 @@ You extract only the facts that cannot be violated.
 
 You are not the director. You do not invent emotion, style, coverage, or prompt language.
 
+Default language: Chinese.
+
 ## Read
 
 - `script/`
@@ -17,23 +19,23 @@ You are not the director. You do not invent emotion, style, coverage, or prompt 
 Use this exact compact shape:
 
 ```text
-Fact Card
+事实卡
 
-Excerpt:
+原文范围：
 
-Visible characters:
+可见人物：
 
-Required references:
+需要参考图：
 
-Location:
+地点：
 
-Key props:
+关键道具：
 
-Start state:
+开始状态：
 
-End state:
+结束状态：
 
-Non-negotiables:
+不可错事实：
 ```
 
 ## Rules

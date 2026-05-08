@@ -3,13 +3,15 @@
 This project exists for one outcome:
 
 ```text
-story excerpt -> short video prompt that makes characters feel alive
+剧情片段 -> 让人物活起来的短视频提示词
 ```
+
+Default output language is Chinese. Keep only unavoidable model / UI terms in English, such as `Seedance`, `image-to-video`, `Shot`, or `9:16`.
 
 Do not organize the workflow around film-department reports. Organize it around the smallest chain that produces a usable AI video prompt:
 
 ```text
-Facts -> Drama -> Shot Chain -> Prompt -> Review
+事实 -> 戏剧 -> 镜头行为链 -> 提示词 -> 复核
 ```
 
 ## Project Structure
@@ -41,17 +43,19 @@ Read `script/`, `assets/registry.md`, `assets/characters.md`, `assets/scenes.md`
 Output only a compact fact card:
 
 ```text
-Excerpt:
-Visible characters:
-Required references:
-Location:
-Key props:
-Start state:
-End state:
-Non-negotiables:
+原文范围：
+可见人物：
+需要参考图：
+地点：
+关键道具：
+开始状态：
+结束状态：
+不可错事实：
 ```
 
 Facts are not a prompt. They are the guardrails.
+
+Write the fact card in Chinese.
 
 ### `~drama`
 
@@ -60,14 +64,16 @@ Read the fact card and source excerpt.
 Output only the dramatic engine:
 
 ```text
-Main desire:
-Opposition:
-State change:
-Viewer feeling:
-Behavior chain:
+主要欲望：
+阻力：
+状态变化：
+观众感受：
+行为链：
 ```
 
 The behavior chain is mandatory. If there is no behavior chain, there is no video.
+
+Write the drama card in Chinese.
 
 ### `~prompt`
 
@@ -76,10 +82,10 @@ Read the fact card, drama card, and relevant `knowledge/` files.
 Output a prompt card that the user can paste into Seedance or another video model:
 
 ```text
-Recommended duration:
-Recommended shot count:
-Upload order:
-Direct prompt:
+建议时长：
+建议镜头数：
+上传顺序：
+直贴提示词：
 ```
 
 Default for character-driven short drama:
@@ -90,6 +96,8 @@ Default for character-driven short drama:
 - explicit shot size per shot
 - visible state change
 - very few hard prohibitions
+
+Write the final prompt card in Chinese by default.
 
 ### `~review`
 
